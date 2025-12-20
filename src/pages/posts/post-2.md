@@ -1,5 +1,6 @@
 ---
 layout: '../../layouts/MarkdownPostLayout.astro'
+author: 'Jorysniel Mata'
 title: My Second Blog Post
 pubDate: 2025-12-20
 description: "After learning some Astro, I couldn't stop!"

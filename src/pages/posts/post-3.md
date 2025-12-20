@@ -1,5 +1,6 @@
 ---
 layout: '../../layouts/MarkdownPostLayout.astro'
+author: 'Jorysniel Mata'
 title: My Third Blog Post
 pubDate: 2025-12-20
 description: "I had some challenges, but asking in the community really helped!"
