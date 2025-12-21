@@ -16,10 +16,31 @@ body {
 	box-sizing: border-box;
 }
 
+header div {
+	display: flex;
+	justify-content: space-between;
+}
+
 h1 {
 	margin: 1rem 0;
 	font-size: 2.5rem;
 }
+
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tag {
+	margin: 0.25em;
+	border: dotted 1px #a1a1a1;
+	border-radius: .5em;
+	padding: .5em 1em;
+	font-size: 1.15em;
+	background-color: #F8FCFD;
+}
+
 
 a:link {
 	text-decoration: none;
@@ -27,6 +48,21 @@ a:link {
 
 ul {
 	text-align: left;
+}
+
+footer {
+	display: flex;
+	gap: 1rem;
+	margin-top: 2rem;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer a {
+	padding: 0.5rem 1rem;
+	color: white;
+	background-color: #4c1d95;
+	text-decoration: none;
 }
 
 /* nav styles */
@@ -64,6 +100,28 @@ ul {
 :has(.menu[aria-expanded="true"]) .nav-links {
 	display: unset;
 }
+
+#themeToggle {
+	border: 0;
+	background: none;
+}
+
+.sun {
+	fill: black;
+}
+
+.moon {
+	fill: transparent;
+}
+
+:global(.dark) .sun {
+	fill: transparent;
+}
+
+:global(.dark) .moon {
+	fill: white;
+}
+
 
 @media screen and (min-width: 636px) {
 	.nav-links {
