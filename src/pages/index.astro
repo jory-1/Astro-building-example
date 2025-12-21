@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 const pageTitle = "Home Page";
-const tags = [...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat())];
 
 ---
 <BaseLayout pageTitle={pageTitle}>
